@@ -1,0 +1,605 @@
+li {
+    list-style: none;
+}
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+body div {
+    transition: all 0.2s;
+   
+}
+
+/* 顶部 */
+header {
+    height: 30px;
+    background-color: #f3f3f3;
+    transition: all 0.3s;
+    z-index: 9999;
+    position: relative;
+}
+
+header .logowecome,
+header ul li a {
+    font-size: 0.9rem
+}
+
+header ul li a:hover {
+    color: #08ba66;
+}
+
+header ul li a {
+    transition: all 0.3s;
+}
+
+/* 顶部导航 */
+.nav {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.151);
+  
+    color: white;
+    z-index: 2;
+
+}
+
+.nav .logo a img {
+    height: 44px;
+}
+
+.nav .assist {
+    font-size: 26px;
+}
+
+.nav .icon-zhankai {
+    opacity: 0;
+    transform: translateX(1000%);
+    position: absolute;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav .topNav .topNavItem {
+    transition: all 0.3s;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.nav .topNav {
+    position: relative;
+    height: 100%;
+}
+.nav .topNav .topNavItem:hover>a,
+.nav .topNav .topNavItem:hover>i {
+    color: #207eff;
+}
+
+
+
+.nav .topNav .topNavItem nav li {
+    height: 30px;
+    line-height: 30px;
+    box-sizing: content-box;
+
+}
+
+.nav .topNav .topNavItem nav li:hover a {
+    color: #207eff;
+}
+
+
+/* 中部banner */
+.centerBanner{
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: -60px 0 0 0;
+}
+/* 共用的轮播图容器 */
+.centerBanner .bannerBj{
+    height: 100%;
+    color: white;
+    position: relative;
+}
+.centerBanner .bannerBj .bannerText{
+    padding: 0 30px;
+}
+.centerBanner .bannerBj .bannerText h1,.centerBanner .bannerBj .bannerText h3{
+    opacity: 0;
+    transition:all 0.3s;
+    transform: translateY(1000%);
+}
+.centerBanner .bannerBj.active .bannerText h1,.centerBanner .bannerBj.active .bannerText h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+.centerBanner .bannerBj.active .btn{
+    animation: isbtn 0.3s ease 
+}
+@keyframes isbtn{
+    0%{
+        transform:  scale(0);
+    }
+    25%{
+        transform:  scale(2);
+    }
+    50%{
+        transform:  scale(0);
+    }
+    75%{
+        transform:  scale(2);
+    }
+    100%{
+        transform:  scale(1);
+    }
+}
+.centerBanner .bannerBj .container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.centerBanner .bannerBj img{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* 公用的箭头 */ .contLf{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height:100%;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    left: 0;
+    z-index: 5;
+    
+}
+ .contRg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height:100%;
+    width: 50px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    right: 0;
+    z-index: 5;
+} .contRg i{
+    font-size: 2rem;
+} .contLf i{
+    font-size: 2rem;
+}
+.centerBanner .bannerBj .btn{
+    cursor: pointer;
+}
+
+
+/* 轮播图滚动容器 */
+
+.bannerCont .bannerBj{
+    float: left;
+}
+
+
+/* banner下面的项目简介 */
+.projectContent{
+    position: relative;
+    z-index:1;
+    min-height: 100px;
+    margin-top: -60px;
+   
+}
+.projectBoxS{
+    margin: 0 auto;
+    background-color: white;
+}
+.projectContent .projectBox .projectBoxItem h1{
+    font-size: 1.5rem!important;
+    font-weight: bold;
+}
+
+/* 核心业务 */
+.businessContent{
+    margin-top: -60px;
+    background-color: #f6f6f6;
+}
+.business{
+    margin: 0 auto;
+    padding-top: 120px;
+}
+.business h1{
+    font-weight: bold;
+}
+.business .businessItem{
+    text-align: center;
+    background-color: white;
+    box-sizing: border-box!important;
+    position: relative;
+    height: 260px;
+    padding: 20px;
+    width: 31%;
+    margin-top: 30px;
+}
+.business .businessItem::after{
+    transition: all 0.3s;
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #207eff;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+.business .businessItem:hover::after{
+    width: 100%;
+}
+
+.business .businessItem div{
+    text-align: left;
+}
+.business .businessItem div h1{
+    font-weight: normal;
+}
+.business .businessItem div p{
+    font-size: 1rem;
+    color: #979797;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space : nowrap
+}
+.business .businessItem:hover div p{
+    color: #979797;
+   
+}
+.business .businessItem:hover{
+   box-shadow:  0 0 8px rgb(0 0 0 / 40%);
+}
+.business .businessItem a img{
+   transition: all 0.3s;
+   width:40%;
+}
+.business .businessItem:hover div{
+    transform: translateX(10px);
+}
+.business .businessItem:hover img{
+    transform: scale(1.2);
+}
+
+/* 服务行业 */
+.serviceContent{
+    background-color: #f6f6f6;
+}
+.serviceContent .serviceBoxTop{
+    margin-bottom: 20px;
+}
+.serviceContent .serviceBoxTop h1{
+    font-weight: bold;
+}
+
+.serviceContent .serviceBanner .serviceIndex{
+    width:40%;
+}
+/* 左侧 */
+.serviceContent .serviceBanner .serviceIndex .serviceIndexItemBox{
+    background-color: white;
+    color: #989898;
+    padding: 10px 2rem;
+    border-radius: 5px;
+}
+.serviceContent .serviceBanner .serviceIndex .serviceIndexItemBox .serviceindexTop h2{
+    font-size: 3.5rem;
+    transition: all 0.3s;
+}
+.serviceContent .serviceBanner .serviceIndex .serviceIndexItemBox .serviceindexTop img{
+    width: 15%;
+    height: 40%;
+    transition: all 0.3s;
+}
+.serviceContent .serviceBanner .serviceIndex .serviceIndexItemBox .serviceindexBottom h3{
+    color: black;
+    transition: all 0.3s;
+}
+.serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceIndexItemBox{
+    background-color: #006affb9;
+    color: white;
+}
+.serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexTop{
+    transform: translateX(20px);
+}
+.serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexTop img{
+    opacity: 0.8;
+}
+.serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexBottom{
+    transform: translateX(20px);
+}
+.serviceContent .serviceBanner .serviceIndex .seriveAIndex.active h3{
+    color: white;
+}
+/* 左侧active */
+
+/* 右侧 */
+.serviceContent .serviceBanner .seriverBannerConten{
+    width: 50%;
+    overflow: hidden;
+}
+.serviceContent .serviceBanner .seriverBannerConten .seriverBannerContenBottom{
+   text-align: center;
+}
+.seriverBannerConten .seriverBannerBox{
+    position: relative;
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox{
+    float: left;
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg{
+    height: 470px;
+    background-size: 100% 100%;
+    background-position: center center;
+    animation: IsseriverImg 5s ease infinite alternate;
+}
+@keyframes IsseriverImg{
+    0%{
+        background-size: 100% 100%;
+    }
+    100%{
+        background-size: 105% 105%;
+    }
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img1{
+    background-image: url(../images/fw1.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img2{
+    background-image: url(../images/fw2.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img3{
+    background-image: url(../images/fw3.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img4{
+    background-image: url(../images/fw4.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img5{
+    background-image: url(../images/fw5.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImg.Img6{
+    background-image: url(../images/fw6.jpg);
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImgBottom{
+    background-color: white;
+    padding: 2rem;
+}
+.seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImgBottom h3{
+    text-align: right;
+    margin-top: 4rem;
+}
+
+/* 宗旨 */
+.purpose{
+    background-size: cover;
+    background-position: center center;
+    background-image:url(../images/guanyu.jpg);
+    height:250px;
+    color:white;
+    padding-top: 40px;
+}
+.purpose p{
+    font-size: 1.5rem;
+}
+.purpose h1{
+    font-weight: bold;
+}
+
+/* 关于我们 */
+.us{
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.us .container{
+    background-color: #207eff;
+}
+.us .uslf{
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.us .uslf h2{
+    font-size: 2rem;
+}
+.us .uslf .jieshao{
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.us .uslf div li{
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.us .uslf div li p{
+    font-size: 1.2rem;
+}
+
+.us .uslf div li p:first-of-type{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.us .usrg{
+    text-align: center;
+}
+.us .usrg a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* 资讯动态 */
+.realTime{
+
+    padding-top: 30px;
+    background-color: #f6f6f6;
+}
+.realTimeTop h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.realContent{
+    overflow: hidden;
+    height: 420px;
+    position:relative;
+}
+.realBannerItem .reallf{
+    width: 60%;
+    background-position: center center;
+    background-size: 100% 100%;
+    animation: IsseriverImg 5s ease infinite alternate;
+    height: 100%;
+}
+.realBanner{
+    height: 100%;
+}
+.realBannerItem{
+    height: 100%;
+    float: left;
+}
+.realBannerItem .reallf.img1{
+    background-image: url(../images/tz1.jpg);
+}
+.realBannerItem .reallf.img2{
+    background-image: url(../images/tz2.jpg);
+}
+.realBannerItem .reallf.img3{
+    background-image: url(../images/tz3.jpg);
+}
+.realBannerItem .realrg{
+    width: 40%;
+    height: 100%;
+}
+.realanniu i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #979797;
+    cursor: pointer;
+}
+.realtext{
+    height: 100%;
+    background-color: white;
+}
+.realtext p:first-of-type a{
+    font-size: 2rem;
+}
+.realtext p{
+    font-size: 1.5rem;
+    color: #979797;
+}
+.realindexS{
+    position: absolute;
+    bottom:20px;
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right:  0;
+    text-align: center;
+}
+.realindexS .realindex{
+    display: inline-block;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+.realindexS .realindex.active{
+    background-color: #207eff;
+}
+
+/* 资讯新闻 */
+.News{
+    padding-top: 20px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.News a{
+    padding: 10px 0;
+}
+.News ul{
+    background: white;
+    padding: 0 20px;
+    padding-bottom:40px!important;
+}
+.News a span{
+    transition: all 0.3s;
+}
+.News a:hover span{
+    transform: translateX(20px);
+}
+.NewsBox{
+    width: 50%;
+}
+.onLine{
+    width: 100%;
+    display: none!important;
+    
+}
+
+
+.tijiao{
+    margin:20px 0;
+    text-align: center;
+}
+
+/* 结尾 */
+footer{
+    padding: 30px 0;
+    background-color: #1f1f1f;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer .footer{
+    margin-top: 20px;
+    text-align: center;
+}
+footer .col-5 p{
+    font-size:1.5rem;
+    margin-top: 10px;
+}
+footer .col-7 h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+footer .col-7{
+    border-left: #363636 1px solid;
+}
+footer  .row{
+    padding-bottom: 20px;
+    border-bottom: #363636 1px solid;
+}
+footer .col-7 a{
+    color: #989898;
+}
+

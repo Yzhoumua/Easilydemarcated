@@ -1,0 +1,392 @@
+@media all and (min-width:850px) {
+    .nav .topNav .topNavItem nav {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .nav .topNav .topNavItem:hover nav {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav .topNav .topNavItem nav li {
+        padding: 10px 50px 0 10px;
+    }
+
+    .nav .topNav .topNavItem nav {
+        background-color: rgba(0, 0, 0, 0.39);
+        height: auto;
+        transition: all 0.3s;
+        transform: scale(0);
+
+    }
+
+    .nav .topNav .topNavItem nav li {
+        padding: 10px 50px 0 10px;
+    }
+
+    
+}
+
+@media all and (max-width:1220px) {
+    .logo {
+        position: absolute;
+        left: -1000px;
+    }
+
+    .nav .navContent {
+        margin: 0 auto;
+    }
+
+    .assist {
+        position: absolute;
+        right: 1500px;
+
+    }
+    .centerBanner .bannerBj h1{
+        font-size:1.2rem;
+    }
+    .centerBanner .bannerBj h3{
+        font-size: 1rem;
+    }
+    .businessContent{
+        margin-top: -170px!important;
+    }
+    .business{
+        padding-top: 200px;
+    }
+    .us .uslf{
+        width: 100%!important;
+    }
+    .us .usrg{
+      
+        width:auto!important;
+    }
+    .us .container .row{
+        margin: 0!important;
+    }
+    .us .container{
+        width: 100%!important;
+        margin: 0!important;
+        padding-bottom: 30px!important;
+        max-width:9999px;
+    }
+
+    /* 资讯 */
+    .realContent{
+        position: relative;
+    }
+    .realanlf{
+        position: absolute;
+        left:20px;
+        top: 0;
+        bottom: 0;
+        margin:auto 0;
+        z-index:1;
+        background-color: #9797976b!important;
+    }
+    .realanrg{
+        position: absolute;
+        right:20px;
+        top: 0;
+        bottom: 0;
+        margin:auto 0;
+        z-index:1;
+        background-color: #f3f3f3!important;
+    }
+    .realtext{
+        position: inherit;
+    }
+    .realindexS{
+        bottom:40px;
+        left: 40px!important;
+        right: 0!important;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width:850px) {
+    .nav {
+        background-color: black !important;
+    }
+
+    .logo {
+        left: 20px;
+        top: 0;
+    }
+
+    .icon-zhankai {
+        font-size: 2rem;
+        transform: translateX(0) !important;
+        right: 20px;
+        top: 0;
+        opacity: 1 !important;
+        cursor: pointer;
+        line-height: 60px;
+    }
+
+    .nav .navContent {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: black;
+        transform: translateY(-150%);
+        z-index: -222;
+    }
+
+    .nav .navContent.active {
+        transform: translateY(0);
+    }
+
+    .nav .navContent .topNav {
+        display: block !important;
+        width: 100%;
+    }
+
+    .nav .navContent .topNav>li {
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .nav .navContent .topNav nav {
+        width: 100%;
+        transition: all 0.3s;
+        position: relative;
+        height: 0;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .nav .navContent .topNav .topNavItem.active nav {
+
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .nav .navContent .topNav .topNavItem.active nav a {
+        color: #f3f3f3;
+    }
+
+    .nav .topNav .topNavItem nav li a:hover {
+        color: #207eff;
+    }
+
+    /* 中部轮播图 */
+    .centerBanner{
+        margin: 0;
+    }
+    .contRgAndLf .icon-xiangzuo1,.contRgAndLf .icon-xiangyou1{
+        font-size: 1rem;
+    }
+    .centerBanner .bannerBj h1{
+        font-size:1rem;
+        margin-bottom: 0!important;
+    }
+    .centerBanner .bannerBj h3{
+        font-size: 0.8rem;
+    }
+    .onLine{
+        display: block!important;
+        text-align: center;
+    }
+    .onLine .form-group{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+}
+@media all and (max-width:769px){
+    .projectContent{
+        margin-top: -120px;
+    }
+    .projectContent .projectBox .projectBoxItem{
+        display: block!important;
+        text-align: center!important;
+    }
+    .projectContent .projectBox .projectBoxItem img{
+        width: 75px;
+        max-width:75px;
+    }
+    .projectContent .projectBox .projectBoxItem div{    
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .projectContent .projectBox .projectBoxItem h1{
+        font-size: 1rem!important;
+    }
+    .projectContent .projectBox .projectBoxItem p{
+        font-size: 0.5rem!important;
+    }
+    .business .businessItem{
+        width: 48%;
+    }
+    .business h1{
+        font-size: 1.5rem!important;
+    }
+    .business .businessItem img{
+        width:70%!important;
+    }
+    .centerBanner .bannerBj img{
+        height: 410px;
+    }
+    /* 服务banner响应 */
+    /* 左侧 */
+    .serviceBoxTop h1{
+        font-size: 1.5rem!important;
+    }
+    .serviceBanner{
+        display: block!important;
+        
+    }
+    .serviceIndexItemBox{
+        padding: 10px!important;
+    }
+    .serviceIndex a{
+        width: 16%;
+        display: block;
+    }
+    .serviceIndex{
+        display: flex;
+        width: 100%!important;
+        justify-content:space-between;
+    }
+    .serviceindexTop h2{
+        font-size: 2rem!important;
+    }
+    .serviceindexTop{
+        justify-content: center!important;
+    }
+    .serviceindexTop img{
+        display: none;
+    }
+    .serviceindexBottom{
+        text-align: center;
+    }
+    .serviceindexBottom h3{
+        font-size:0.8rem;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space : nowrap
+    }
+    .serviceindexBottom p{
+        font-size:0.7rem;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        white-space : nowrap
+    }
+    .serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexTop{
+        transform: scale(1);
+    }
+    .serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexTop img{
+        opacity:1;
+    }
+    .serviceContent .serviceBanner .serviceIndex .seriveAIndex.active .serviceindexBottom{
+        transform: scale(1);
+    }
+    .serviceContent .serviceBanner .serviceIndex .seriveAIndex.active h3{
+        color: white;
+    }
+    /* 右侧 */
+    .seriverBannerConten{
+        width: 100%!important;
+    }
+    .seriverImg{
+        height: 250px!important;
+    }
+    .seriverBannerConten .seriverBannerBox .seriverImgBox .seriverImgBottom h3{
+        margin-top: 2rem;
+    }
+    /* 资讯 */
+    .realBannerItem{
+        flex-direction: column;
+    }
+    .realanrg{
+        right: 0;
+    }
+    .realanlf{
+        left: 0;
+    }
+    .reallf,.realrg{
+        width: 100%!important;
+    }
+    .realtext{
+        padding: 0 20px;
+        padding-top: 30px;
+    }
+    .realindexS{
+        display: inline-block;
+        width: auto;
+    }
+    .realindex{
+        display: inline-block;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 20px;
+    }
+    .NewsBox{
+        width: 100%;
+    }
+    .NewsBox h1{
+        font-size: 2rem;
+    }
+    footer .col-5{
+        display: none!important;
+    }
+    footer li{
+        display: none!important;
+    }
+    footer .col-7{
+        flex: 0 0 100%;
+        border-left:#207dff00;
+      
+        max-width: 99999px;
+    }
+    footer .col-7 ul{
+
+        padding: 0;
+        width: 33%;
+        max-width: 9999px;
+        text-align: center;
+    }
+    footer .col-7 ul h2{
+        width: 100%!important;
+        max-width: 9999px;
+    }
+}
+@media all and (max-width:600px){
+    .centerBanner .bannerBj img{
+        height: 500px;
+        width: auto;
+    }
+    .contRgAndLf{
+        opacity: 0;
+    }
+    .business h1{
+        font-size: 2rem;
+    }
+    .business h2{
+        font-size:1.5rem;
+    }
+}
+@media all and (max-width:576px) {
+    /* 顶部 */
+    header {
+        height: 60px;
+        text-align: center;
+    }
+    header .row {
+        display: block !important;
+    }
+    .centerBanner .bannerBj h1{
+        font-size:2rem;
+        margin-bottom: 0!important;
+    }
+    .centerBanner .bannerBj h3{
+        font-size:1rem;
+    }
+
+}
